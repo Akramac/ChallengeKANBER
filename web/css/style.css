@@ -1,7 +1,5 @@
 .topbar-left{
-
   margin-left:120px;
-
 }
 .dropdown{
   position:relative;
@@ -54,15 +52,11 @@ top:250px;
 background-color: rgb(53, 135, 43) !important;
 border-color: #8064A2;
 }
-
 .foooter{
 color:white;
 background-color:rgb(46, 27, 66);
-
 }
-
 .est{
 position:relative;
 float:right;
-
 }
