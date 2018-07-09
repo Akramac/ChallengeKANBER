@@ -1,0 +1,18 @@
+Shop_unordered_homepage:
+    path:     /
+    defaults: { _controller: ChallengeChallengeBundle:Default:index }
+Shop_homepage:
+    path:     /shops
+    defaults: { _controller: ChallengeChallengeBundle:Shop:shop }
+Liked_shops:
+    path:     /liked
+    defaults: { _controller: ChallengeChallengeBundle:Liked:liked }
+Db_add:
+    path:  /shop/add/{id}
+    defaults: { _controller: ChallengeChallengeBundle:Liked:dbadd }
+Db_supp:
+    path:  /shop/supp/{id}
+    defaults: { _controller: ChallengeChallengeBundle:Liked:dbsupp }
+Shop_dislike:
+    path:  /shop/dislike/{id}
+    defaults: { _controller: ChallengeChallengeBundle:Liked:dislike }

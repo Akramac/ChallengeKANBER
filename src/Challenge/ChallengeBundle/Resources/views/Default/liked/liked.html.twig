@@ -1,0 +1,43 @@
+{% extends 'base.html.twig'%}
+{% block body %}
+
+<div class="container">
+{% include 'navigation.html.twig'%}
+    <div class="row">
+        <div class="span3">
+                {% include 'navigation.html.twig' %}
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    {% include 'Conn/utilisateursConnecte.html.twig' %}
+                {% else %}
+                    {% include 'Conn/utilisateurs.html.twig' %}
+                {% endif %}
+
+       </div>
+        <div class="span9">
+        <ul class="thumbnails">
+              {% for shop in shops %}
+               {%if(shop.liked=='1')%}
+                  <li class="span3">
+                      <div class="thumbnail ">
+                          <img src="{{shop.image}}" alt="Searching" width="300" height="150">
+                          <div class="caption">
+                              <h4>{{ shop.nom }}</h4>
+                              <a class="btn btn-danger" href="{{path('Db_supp',{'id':shop.id})}}">Remove</a>
+                              {{ shop.distance }} km
+                          </div>
+                      </div>
+                  </li>
+
+             {%endif%}
+            {% endfor %}
+              </ul>
+          </div>
+          <div class="span3">
+                  <ul>
+                   <li><a href="{{path('Shop_homepage')}}">Nearby Shops</a></li>
+                   <li><a href="{{path('Liked_shops')}}">My Prefered Shops</a></li>
+                  </ul>
+         </div>
+     </div>
+</div>
+{% endblock %}
