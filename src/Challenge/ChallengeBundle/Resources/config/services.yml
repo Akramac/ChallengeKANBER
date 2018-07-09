@@ -1,0 +1,8 @@
+services:
+#    challenge_challenge.example:
+#        class: Challenge\ChallengeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    Challenge\ChallengeBundle\DataFixtures\ORM\MediaData:
+        tags: [doctrine.fixture.orm]
+    Challenge\ChallengeBundle\DataFixtures\ORM\ShopsData:
+        tags: [doctrine.fixture.orm]

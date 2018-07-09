@@ -1,0 +1,3 @@
+FIRST VERSION OF THE CODING CHALLENGE
+
+All what was demanded is in the website  I changed the 2 hour dislike to 20 seconds using Javascript onclick function wich hide the disliked shops
