@@ -14,7 +14,7 @@ Bonus point (those items are optional):
 [BONUS] As a User, I can display the list of preferred shops
 [BONUS] As a User, I can remove a shop from my preferred shops list
 
-You normally if are using a localhost you need to get to this URL: http://localhost/challenge/web/app_dev.php/
+You normally if are using a localhost you need to get to this URL if you are a Developer: http://localhost/challenge/web/app_dev.php/
 
 Note that We have changed the 2 hours dislike delay to 20 seconds in order to see the changes in real time.I tried using changin database in Controller adding a DO SLEEP () 
 but it makes the website blocked and waiting for the period of time in order to change the value of the Database.So I have choosen using Javascript instead.
