@@ -21,7 +21,7 @@
                       <div class="thumbnail ">
                           <img src="{{shop.image}}" alt="Searching" width="300" height="150">
                           <div class="caption">
-                              <h4>{{ shop.nom }}</h4>
+                              <h4>{{ shop.nom |purify }}</h4>
                               <a class="btn btn-danger" href="{{path('Db_supp',{'id':shop.id})}}">Remove</a>
                               {{ shop.distance }} km
                           </div>
