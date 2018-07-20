@@ -1,6 +1,6 @@
 README:::
 
-The project is a coding challenge in order to be recruted with Hidden Founder 
+The project is a coding challenge
 The project is about implementing an app that lists shops nearby.
 
 As a User, I can sign up using my email & password
